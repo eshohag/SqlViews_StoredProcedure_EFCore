@@ -126,6 +126,8 @@ namespace ConsoleApp
         #region Configuration
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<BlogPostsCount>(
                     eb =>
                     {
